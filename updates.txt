@@ -1,0 +1,5 @@
+Notes:
+
+- Polish off 2020 Folder
+- Add pictures, renamed
+- Put [::-webkit-scrollbar {display: none;}] in 2019
