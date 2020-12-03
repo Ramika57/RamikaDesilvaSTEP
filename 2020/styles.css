@@ -79,10 +79,11 @@ a {
     display: block;
 }
 
+/*
 .drop-content-2019 a:hover {background-color: #ddd;}
 
 .drop-heading-2019:hover .drop-content-2019 {display: block;}
-
+*/
 .drop-heading-2020 {
     position: relative;
     display: inline-block;
@@ -173,7 +174,7 @@ body {
 .aboutmepage {
     display: flex;
     height: 100vh;
-    background: url("../Pictures/aboutme.jpg");
+    background: url("../Pictures/aboutmemain.jpg");
     color: grey;
     min-height: 500px;
     font-family: 'Helvitica', sans-serif;
@@ -185,11 +186,12 @@ body {
 .aboutmepage .max-width {
     margin: auto 0 auto 138px;
     position: fixed;
-    bottom: 35%;
+    bottom: 20%;
+    left: 8%;
 }
 
 .aboutmepage .max-width h1 {
-    font-size: 200px;
+    font-size: 150px;
     transition: all 1.5s ease;
     font-weight: bold;
 }
@@ -265,7 +267,7 @@ body {
 #main-container .school p {
     display: flex;
     position: absolute;
-    bottom: 20%;
+    bottom: 15%;
     left: 43%;
     margin: auto 0 auto 100px;
     font-size: 30px;
@@ -276,7 +278,7 @@ body {
 #main-container #hobbies p {
     display: flex;
     position: absolute;
-    bottom: 50%;
+    bottom: 35%;
     left: 43%;
     margin: auto 0 auto 100px;
     font-size: 30px;
@@ -322,7 +324,7 @@ body {
 .reflectionspage {
     display: flex;
     height: 100vh;
-    background: url("../Pictures/reflectionsmain.jpg");
+    background: url("../Pictures/reflections-main.jpg");
     color: grey;
     min-height: 500px;
     font-family: 'Helvitica', sans-serif;
@@ -334,11 +336,11 @@ body {
 .reflectionspage .max-width {
     margin: auto 0 auto 270px;
     position: fixed;
-    bottom: 29%;
+    bottom: 40%;
 }
 
 .reflectionspage .max-width h1 {
-    font-size: 120px;
+    font-size: 110px;
     transition: all 1.5s ease;
 }
 
@@ -355,6 +357,37 @@ body {
 #main-container div {
     width: 100%;
     height: 100%;
+}
+
+.reflectionspage .buttons {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: auto 0 auto 500px;
+    align-items: center;
+}
+
+.reflectionspage .buttons a {
+    position: relative;
+    display: inline-block;
+    padding: 17px 36px;
+    margin: 4px 0;
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #32CD32, #ADD8E6);
+    top: 120px;
+    border: 4px solid #32cd32;
+    transition: all 1s ease;
+}
+
+.reflectionspage .buttons a:hover {
+    color: lightblue;
+    background: none;
 }
 
 /* Learning Journey */
@@ -375,10 +408,11 @@ body {
     margin: auto 0 auto 96px;
     position: fixed;
     bottom: 28%;
+    left: 10%;
 }
 
 .learningjourney .max-width h1 {
-    font-size: 120px;
+    font-size: 90px;
     transition: all 1.5s ease;
 }
 
@@ -395,28 +429,27 @@ body {
 #main-container div {
     width: 100%;
     height: 100%;
-}
-
-#main-container .learningp {
     position: sticky;
     top: 0;
     background: url("../Pictures/learningjdiv.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: fixed;
 }
 
-#main-container .learningp p {
+
+#main-container .learningp p{
     display: flex;
     position: absolute;
-    bottom: 1%;
+    bottom: 35%;
     left: 5%;
     right: 5%;
     margin: auto 0 auto 100px;
-    font-size: 40px;
+    font-size: 30px;
     color: black;
     margin-right: 5%;
     font-family: "Bebas Neue", sans-serif;
 }
+
 
 /* Predictions Main */
 
@@ -434,6 +467,7 @@ body {
     margin: auto 0 auto 315px;
     position: fixed;
     bottom: 45%;
+    left: -8%;
 }
 
 .predictions .max-width h1 {
@@ -519,7 +553,7 @@ body {
 #main-container .maths {
     position: sticky;
     top: 0;
-    background: url("../Pictures/Predictions.jpg");
+    background: url("../Pictures/learningjdiv.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -528,7 +562,7 @@ body {
     display: flex;
     font-size: 80px;
     margin: auto 0 auto 100px;  
-    color: aliceblue; 
+    color: black; 
     position: absolute;
     bottom: 45%;
     left: 10%;
@@ -546,7 +580,7 @@ body {
 #main-container #english {
     position: sticky;
     top: 0;
-    background: url("../Pictures/Predictions.jpg");
+    background: url("../Pictures/learningjdiv.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -555,10 +589,10 @@ body {
     display: flex;
     font-size: 80px;
     margin: auto 0 auto 100px;
-    color: aliceblue;
+    color: black;
     position: absolute;
     bottom: 45%;
-    left: 10%;
+    left: 1%;
     font-family: 'Architects Daughter', sans-serif;
     transition: all 1 ease;
 }
@@ -574,22 +608,22 @@ body {
 #main-container .maths p {
     display: flex;
     position: absolute;
-    bottom: 50%;
+    bottom: 30%;
     left: 43%;
     margin: auto 0 auto 100px;
     font-size: 30px;
-    color: aliceblue;
+    color: black;
     margin-right: 5%;
 }
 
 #main-container #english p {
     display: flex;
     position: absolute;
-    bottom: 50%;
+    bottom: 28%;
     left: 43%;
     margin: auto 0 auto 100px;
     font-size: 30px;
-    color: aliceblue;
+    color: black;
     margin-right: 5%;
 }
 
@@ -604,7 +638,7 @@ body {
 #main-container #science {
     position: sticky;
     top: 0;
-    background: url("../Pictures/Predictions.jpg");
+    background: url("../Pictures/learningjdiv.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -613,17 +647,17 @@ body {
     display: flex;
     font-size: 80px;
     margin: auto 0 auto 100px;  
-    color: aliceblue; 
+    color: black; 
     position: absolute;
     bottom: 45%;
-    left: 10%;
+    left: 100%;
     transition: all 1 ease;
 }
 
 #main-container #science span {
     font-size: 100px;
     position: absolute;
-    left: 120%;
+    left: 200%;
     bottom: 0%;
     display: flex;
 }
@@ -635,13 +669,14 @@ body {
     left: 43%;
     margin: auto 0 auto 100px;
     font-size: 30px;
-    color: aliceblue;
+    color: black;
     margin-right: 5%;
 }
 
 #main-container #science h2:hover {
     color: burlywood;
 }
+
 
 /* Goals 2020 */
 
@@ -711,11 +746,11 @@ body {
 .container .learner p {
     display: flex;
     position: absolute;
-    bottom: 50%;
+    bottom: 35%;
     left: 43%;
     margin: auto 0 auto 100px;
-    font-size: 30px;
-    color: aliceblue;
+    font-size: 38px;
+    color: orange;
     margin-right: 5%;
 }
 
@@ -754,11 +789,11 @@ body {
 .container .thinker p {
     display: flex;
     position: absolute;
-    bottom: 50%;
+    bottom: 35%;
     left: 43%;
     margin: auto 0 auto 100px;
-    font-size: 30px;
-    color: aliceblue;
+    font-size: 38px;
+    color: orange;
     margin-right: 5%;
 }
 
@@ -796,11 +831,11 @@ body {
 .container .worker p {
     display: flex;
     position: absolute;
-    bottom: 50%;
+    bottom: 35%;
     left: 43%;
     margin: auto 0 auto 100px;
-    font-size: 30px;
-    color: aliceblue;
+    font-size: 38px;
+    color: orange;
     margin-right: 5%;
 }
 
@@ -838,14 +873,254 @@ body {
 .container .future p {
     display: flex;
     position: absolute;
-    bottom: 50%;
+    bottom: 30%;
     left: 43%;
     margin: auto 0 auto 100px;
-    font-size: 30px;
-    color: aliceblue;
+    font-size: 38px;
+    color: orange;
     margin-right: 5%;
 }
 
 .container .future h2:hover {
     color: burlywood;
+}
+
+/* End Of Year Reflection */
+.endofyear {
+    display: flex;
+    height: 100vh;
+    background: url("../Pictures/eoyref.jpg");
+    color: grey;
+    min-height: 500px;
+    font-family: 'Helvitica', sans-serif;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.endofyear .max-width {
+    margin: auto 0 auto 96px;
+    position: fixed;
+    bottom: 34%;
+}
+
+.endofyear .max-width h1 {
+    font-size: 90px;
+    transition: all 1.5s ease;
+}
+
+.endofyear .max-width h1:hover {
+    color: red;
+}
+
+#main-container {
+    font-family: 'Architects Daughter', sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+#main-container div {
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    top: 0;
+    background: url("../Pictures/divs-goals.jpeg");
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+}
+
+
+#main-container .endofyear p{
+    display: flex;
+    position: absolute;
+    bottom: 50%;
+    left: 5%;
+    right: 5%;
+    margin: auto 0 auto 100px;
+    font-size: 25px;
+    color: black;
+    margin-right: 5%;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+/* Remote Learning Journey */ 
+.remlearning {
+    display: flex;
+    height: 100vh;
+    background: url("../Pictures/sem1ref.jpg");
+    color: grey;
+    min-height: 500px;
+    font-family: 'Helvitica', sans-serif;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.remlearning .max-width {
+    margin: auto 0 auto 96px;
+    position: fixed;
+    bottom: 30%;
+}
+
+.remlearning .max-width h1 {
+    font-size: 80px;
+    transition: all 1.5s ease;
+}
+
+.remlearning .max-width h1:hover {
+    color: red;
+}
+
+#main-container {
+    font-family: 'Architects Daughter', sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+#main-container div {
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    top: 0;
+    background: url("../Pictures/divs-goals.jpeg");
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+}
+
+
+#main-container .remlearning p{
+    display: flex;
+    position: absolute;
+    bottom: 50%;
+    left: 5%;
+    right: 5%;
+    margin: auto 0 auto 100px;
+    font-size: 30px;
+    color: black;
+    margin-right: 5%;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+/* STEP Reflections */
+
+.stepref {
+    display: flex;
+    height: 100vh;
+    background: url("../Pictures/step-reflection.jpg");
+    color: grey;
+    min-height: 500px;
+    font-family: 'Helvitica', sans-serif;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.stepref .max-width {
+    margin: auto 0 auto 96px;
+    position: fixed;
+    bottom: 40%;
+    left: 12%;
+}
+
+.stepref .max-width h1 {
+    font-size: 80px;
+    transition: all 1.5s ease;
+}
+
+.stepref .max-width h1:hover {
+    color: red;
+}
+
+#main-container {
+    font-family: 'Architects Daughter', sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+#main-container div {
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    top: 0;
+    background: url("../Pictures/divs-goals.jpeg");
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+}
+
+
+#main-container .stepref p{
+    display: flex;
+    position: absolute;
+    bottom: 55%;
+    left: 5%;
+    right: 5%;
+    margin: auto 0 auto 100px;
+    font-size: 30px;
+    color: black;
+    margin-right: 5%;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+/* Semester 1 Reflection */
+
+.sem1 {
+    display: flex;
+    height: 100vh;
+    background: url("../Pictures/sem1ref.jpg");
+    color: grey;
+    min-height: 500px;
+    font-family: 'Helvitica', sans-serif;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sem1 .max-width {
+    margin: auto 0 auto 96px;
+    position: fixed;
+    bottom: 38%;
+    left: 8%;
+}
+
+.sem1 .max-width h1 {
+    font-size: 70px;
+    transition: all 1.5s ease;
+}
+
+.sem1 .max-width h1:hover {
+    color: red;
+}
+
+#main-container {
+    font-family: 'Architects Daughter', sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+#main-container div {
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    top: 0;
+    background: url("../Pictures/divs-goals.jpeg");
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+}
+
+
+#main-container .sem1 p{
+    display: flex;
+    position: absolute;
+    bottom: 25%;
+    left: 5%;
+    right: 5%;
+    margin: auto 0 auto 100px;
+    font-size: 35px;
+    color: black;
+    margin-right: 5%;
+    font-family: "Bebas Neue", sans-serif;
 }
